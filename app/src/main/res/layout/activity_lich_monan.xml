@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".UI.LichMonan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/edtNgay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:layout_weight="1"></TextView>
+        <ImageView
+            android:id="@+id/imglich"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_calender_2"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_addma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm món ăn"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"></Button>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ngaymonan"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:layout_gravity="bottom"
+
+        android:layout_weight="0.2" />
+</LinearLayout>

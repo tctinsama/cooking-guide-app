@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_dacs3_2"
+    tools:context=".UI.MtMonan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/loginfont"
+        android:gravity="center"
+        android:text="Chi tiết món ăn"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/btnyt"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Thêm vào yêu thích"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTenma"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/loginfont"
+        android:gravity="center"
+        android:text="Tên món ăn"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvNl"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_textview"
+        android:lines="5"
+        android:scrollbars="vertical"
+        android:text="Mô tả nguyên liệu"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textSize="26dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    <TextView
+        android:id="@+id/tvMotama"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_textview"
+        android:lines="5"
+        android:scrollbars="vertical"
+        android:text="Mô tả cách làm"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textSize="26dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

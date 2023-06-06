@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dacs3_2"
+    tools:context=".Action.InsertDanhmuc">
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Thêm danh mục "
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/loginfont"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"></TextView>
+
+    <EditText
+        android:id="@+id/edtTenDM"
+        android:layout_width="385dp"
+        android:layout_height="56dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_iputtype"
+        android:hint="Nhập name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="10dp"></EditText>
+
+
+    <Button
+        android:id="@+id/btnThemDM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Thêm"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="30dp"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

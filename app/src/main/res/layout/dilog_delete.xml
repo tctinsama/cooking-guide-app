@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_corner_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#C8C16262"
+        android:gravity="center"
+        android:text="Bạn có chắn chắn muốn xóa ?"
+        android:textSize="20dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnKhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KHÔNG"
+            android:background="@drawable/background_button_radius"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/btnCo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CÓ"
+           android:layout_weight="1"
+            android:background="@drawable/background_button_radius"
+            android:textColor="@color/black"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_dacs3_2"
+    tools:context=".Action.InsertMonan">
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/loginfont"
+        android:text="Thêm món ăn"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/edtTenMA"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_iputtype"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Nhập tên món ăn "
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/edtNl"
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        tools:layout_editor_absoluteX="10dp"></EditText>
+
+    <Spinner
+        android:id="@+id/spinner_danhmuc"
+        android:layout_width="394dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_iputtype"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <EditText
+        android:id="@+id/edtNl"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_iputtype"
+        android:hint="Nhập nguyên liệu món ăn "
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtDec"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_iputtype"
+        android:hint="Nhập mô tả cách làm món ăn "
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnThemMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Thêm"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="30dp"></Button>
+
+</LinearLayout>
+</ScrollView>
